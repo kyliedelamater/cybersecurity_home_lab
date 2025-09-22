@@ -9,4 +9,6 @@ Before beginning:
 
 Lab:
 
+![Switch to Root User Command](images/l1q4.png)
+^^Here, I switched to the root user, which can is differentiated by the # at the end of the line rather than a $. It is also root@ instead of delamaterk@.
 
