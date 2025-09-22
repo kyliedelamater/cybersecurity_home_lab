@@ -1,6 +1,6 @@
 # Cybersecurity Home Lab
 
-This repository displays my cybersecurity home lab projects. I explored security concepts through hands-on experiments, labs, and reports. I was able to simulate attacks, defenses without touching my personal machine through the use of a virtual machine.
+This repository displays my cybersecurity home lab projects. I explored security concepts through hands-on experiments, labs, and reports. I was able to simulate attacks and defenses without touching my personal machine through the use of a virtual machine.
 
 ---
 
