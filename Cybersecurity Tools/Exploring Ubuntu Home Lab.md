@@ -3,19 +3,20 @@
 ---
 
 Before beginning:
-1) Ran 'sudo apt update' to refresh my packacge index and show my system which packages could be updated.
+1) Ran 'sudo apt update' to refresh my package index and show my system which packages could be updated.
 2) Ran 'sudo apt upgrade' to install any updates my system needed.
 3) Ran 'sudo reboot' to guarantee the system applied all updates consistently.
 
 Lab:
-
+4)
 ![Switch to Root User Command](../images/l1q4.png)
 
-4) I switched to the root user, which can differentiated by the # at the end of the line rather than a $. It is also root@ instead of delamaterk@.
+I switched to the root user, which can differentiated by the # at the end of the line rather than a $. It is also root@ instead of delamaterk@.
 
+5)
 ![useradd and adduser commands](../images/l1q5.png)
 
-5) The useradd command only creates the user, while adduser uses a perl script to create a password and home directory for the user. As you can see, I had trouble with setting the password because I though bad password meant I had to do a different password.
+The useradd command only creates the user, while adduser uses a perl script to create a password and home directory for the user. As you can see, I had trouble with setting the password because I though bad password meant I had to do a different password.
 
 ![Switching to user sally](../images/l1q6.png)
 
