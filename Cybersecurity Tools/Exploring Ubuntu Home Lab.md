@@ -61,7 +61,27 @@ Group Tasks:
 
 16) From my user login, I was able to check what groups sally is in using 'groups sally'.
 
+Permission and Access Control List Tasks:
 
+![Creating lab1 directory](../images/l1q17.png)
+
+17) I created a lab1 directory using 'mkdir' and checked its permissions using 'ls -ld lab1'. delamaterk (me) is both the owner and group owner of this directory. The owner can read, write, and execute. The group owner can read, write, and execute. Others can read and execute, but not write.
+
+![HelloWorld in bash](../images/l1q18.png)
+
+18) I moved into the lab1 directory and used the command 'nano' to create a helloWorld.sh file to edit. I used cat to display the script I wrote. 'chmod +x' adds execute commands to the file. I ran the script and it printed Hello World! as expected.
+
+![Checking/changing permissions](../images/l1q19.png)
+
+19) The owner has rwx, group owner has rwx, and other has r-x. In the case that the group did not have rwx permission, I could use 'chmod 775' to allow them to rwx.
+
+![Using getfacl](../images/l1q20.png)
+
+20) Using 'getfacl' allowed me to see the access control list for the file.
+
+![Using setfacl](../images/l1q21.png)
+
+21) I used 'setfacl' to modify the list and give the user sally read and write permissions. 'getfacl' allowed me to see that this change was successful. 
 
 
 
