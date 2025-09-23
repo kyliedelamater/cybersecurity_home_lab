@@ -7,16 +7,15 @@ Before beginning:
 2) Ran 'sudo apt upgrade' to install any updates my system needed.
 3) Ran 'sudo reboot' to guarantee the system applied all updates consistently.
 
-Lab:
-4)
+User Tasks:
+
 ![Switch to Root User Command](../images/l1q4.png)
 
-I switched to the root user, which can differentiated by the # at the end of the line rather than a $. It is also root@ instead of delamaterk@.
+4) I switched to the root user, which can differentiated by the # at the end of the line rather than a $. It is also root@ instead of delamaterk@.
 
-5)
 ![useradd and adduser commands](../images/l1q5.png)
 
-The useradd command only creates the user, while adduser uses a perl script to create a password and home directory for the user. As you can see, I had trouble with setting the password because I though bad password meant I had to do a different password.
+5) The useradd command only creates the user, while adduser uses a perl script to create a password and home directory for the user. As you can see, I had trouble with setting the password because I though bad password meant I had to do a different password.
 
 ![Switching to user sally](../images/l1q6.png)
 
@@ -39,6 +38,28 @@ The useradd command only creates the user, while adduser uses a perl script to c
 ![Checking my id](../images/l1q11.png)
 
 11) Using the 'id' command, I can see that my user id is 1000.
+
+Group Tasks:
+
+![Checking my groups](../images/l1q12.png)
+
+12) The groups command shows all of the groups that I am apart of.
+
+![Giving sally sudo privileges](../images/l1q13.png)
+
+13) I used 'usermod -a -G' to add sally to the sudo group. The '-a' stands for append and the '-G' indicates group. Then I switched users to sally to check she was successfully added, which she was. Then, I used 'useradd' to add a new user, which could now be done when I was logged in as sally because she was added to the sudo group.
+
+![Creating new group](../images/l1q14.png)
+
+14) I used the 'groupadd' command to create a group called cybersec.
+
+![Added sally to group cybersec](../images/l1q15.png)
+
+15) I used 'usermod -a -G' to add sally to the new cybersec group.
+
+![Checking sally's groups](../images/l1q16.png)
+
+16) From my user login, I was able to check what groups sally is in using 'groups sally'.
 
 
 
