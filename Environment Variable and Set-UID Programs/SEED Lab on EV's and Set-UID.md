@@ -6,9 +6,11 @@
 Task 1: Manipulating Environment Variables
 
 ![print ev's](../images/l2q1.png)
+
 Print out environment variables using "printenv" command.
 
 ![export and unset commands](../images/l2q2.png)
+
 Use "export nameOfEV" to set an environment variable and "unset nameOfEV" to unset an environment variable.
 
 Task 2: Passing Environment Variables from Parent Process to Child Process
