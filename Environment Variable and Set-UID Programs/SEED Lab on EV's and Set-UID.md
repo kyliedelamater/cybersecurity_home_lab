@@ -16,6 +16,7 @@ Task 1: Manipulating Environment Variables
 Task 2: Passing Environment Variables from Parent Process to Child Process
 
 ![compile and run c program](../images/l2q3.png)
+
 ^^I navigated to the "Labsetup" folder provided by the SEED Lab and compiled "myprintenv.c". This produced an executable named "a.out", which was then ran and its output was placed into a file.
 
 ![recompile and run c program](../images/l2q4.png)
