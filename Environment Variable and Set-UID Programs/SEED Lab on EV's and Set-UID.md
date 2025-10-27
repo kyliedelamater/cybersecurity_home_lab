@@ -69,9 +69,39 @@ The differences in these are most likely due to security/permission limitations,
 Task 8: Invoking External Programs Using system() versus execve()
 
 ![system() vs execve()](../images/l2q16.png)
+I compiled the "catall.c" program, changed the owner to root, made it a set-UID program, and ran "ls" to confirm the changes were made.
+
+![system()](../images/l2q17.png)
+I created a test file called "task8ex" that contained nothing. Then, I ran the "catall.c" program and added "";/bin/sh"" to the end of the file name. It opened up a shell and I was able to delete the "task8ex" file. I attempted to get a root shell by changing the owner of "task8ex" to root, but was unsuccessful.
+
+![execve()](../images/l2q18.png)
+I changed the use of system() to execve(), recompiled the program, and made it a root owned set-UID program. I attempted the same input as the previous step but received a "No such file or directory" error.
+
+My attack worked with system() and not execve() because system combines code and data. It reads the command as command, whereas execve() reads the entire input as a string. Basically, system() has no 
+input validation, so it's vulnerable to an attack like this.
+
+ Task 9: Capability Leaking
+
+![capability leaking()](../images/l2q19.png)
+I compiled "cap_leak.c" and made it a root owned set-UID program
+
+![capability leaking()](../images/l2q20.png)
+I moved to the etc folder and created a file named "zzz"
+
+![capability leaking()](../images/l2q21.png)
+I ran "cap_leak.c" and I began trying different things trying to write to it. I attempted nano and vim, but was not successful with either of them because of permission issues. I decided to terminate the program and, for some reason, when I exited the shell I had a root shell. I do not know how this happened and I'm unsure if it's related to the capability leaking program or not. 
+
+![capability leaking()](../images/l2q22.png)
+Here's the root shell that opened. 
+
+While I was unsuccessful in writing to the file for the capability leaking example, I did open a root shell accidentally. I'm wondering if I just do not know enough about Linux commands or how to find the vulnerabilities. Online resourcers weren't able to help me out here either.
 
 
 
+
+
+
+ 
 
 
 
