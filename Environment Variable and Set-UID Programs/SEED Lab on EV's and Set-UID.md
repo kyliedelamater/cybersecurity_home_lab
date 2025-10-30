@@ -89,7 +89,7 @@ Task 8: Invoking External Programs Using system() versus execve()
 
 ![system()](../images/l2q17.png)
 
-^^I created a test file called "task8ex" that contained nothing. Then, I ran the "catall.c" program and added "";/bin/sh"" to the end of the file name. It opened up a shell and I was able to delete the "task8ex" file. I attempted to get a root shell by changing the owner of "task8ex" to root, but was unsuccessful.
+^^I created a test file called "task8ex" that contained nothing. Then, I ran the "catall.c" program and added "";/bin/sh"" to the end of the file name. It opened up a shell and I was able to delete the "task8ex" file. I attempted to get a root shell by changing the owner of "task8ex" to root, but was unsuccessful. **I believe this may have failed because I did not change my shell
 
 ![execve()](../images/l2q18.png)
 
