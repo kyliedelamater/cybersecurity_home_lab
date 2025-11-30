@@ -11,3 +11,6 @@ This repository displays my cybersecurity home lab projects. I explored security
 
 ### 2. Environment Variables and Set-UID Programs
 - [SEED Lab on EV's and Set-UID](Environment%20Variable%20and%20Set-UID%20Programs/SEED%20Lab%20on%20EV's%20and%20Set-UID.md)
+
+### 3. Cross Site Request Forgery
+- [Cross Site Request Forgery Lab](Cross%20Site%20Request%20Forgery/Cross%20Site%20Request%20Forgery%20Lab.md)
